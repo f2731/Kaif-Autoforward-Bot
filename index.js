@@ -545,7 +545,7 @@ function wasi_startServer() {
         console.log(`🌐 Server running on port ${wasi_port}`);
         console.log(`📡 Auto Forward: ${SOURCE_JIDS.length} source(s) → ${TARGET_JIDS.length} target(s)`);
         console.log(`✨ Message Cleaning: Forwarded labels removed, Newsletter markers cleaned`);
-        console.log(`🤖 Bot Commands: !ping, !jid, !gjid`);
+        console.log(`🤖 Bot Commands: .ping, .jid, .gjid`);
     });
 }
 
