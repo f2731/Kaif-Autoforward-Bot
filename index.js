@@ -260,15 +260,15 @@ function processAndCleanMessage(originalMessage) {
 // -----------------------------------------------------------------------------
 
 /**
- * Handle !ping command
+ * Handle .ping command
  */
 async function handlePingCommand(sock, from) {
-    await sock.sendMessage(from, { text: "Love You😘" });
+    await sock.sendMessage(from, { text: "Kaif-Autoforward-Bot is Working Fast (923298634113)" });
     console.log(`Ping command executed for ${from}`);
 }
 
 /**
- * Handle !jid command - Get current chat JID
+ * Handle .jid command - Get current chat JID
  */
 async function handleJidCommand(sock, from) {
     await sock.sendMessage(from, { text: `${from}` });
@@ -276,7 +276,7 @@ async function handleJidCommand(sock, from) {
 }
 
 /**
- * Handle !gjid command - Get all groups with details
+ * Handle .gjid command - Get all groups with details
  */
 async function handleGjidCommand(sock, from) {
     try {
@@ -341,13 +341,13 @@ async function processCommand(sock, msg) {
     const command = text.trim().toLowerCase();
     
     try {
-        if (command === '!ping') {
+        if (command === '.ping') {
             await handlePingCommand(sock, from);
         } 
-        else if (command === '!jid') {
+        else if (command === '.jid') {
             await handleJidCommand(sock, from);
         }
-        else if (command === '!gjid') {
+        else if (command === '.gjid') {
             await handleGjidCommand(sock, from);
         }
     } catch (error) {
