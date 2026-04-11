@@ -263,7 +263,7 @@ function processAndCleanMessage(originalMessage) {
  * Handle !ping command
  */
 async function handlePingCommand(sock, from) {
-    await sock.sendMessage(from, { text: "Kaif-Autoforward-Bot is Working Fast (923298634113)" });
+    await sock.sendMessage(from, { text: "Raju-Autoforward-Bot is Working Fast (923071782626)" });
     console.log(`Ping command executed for ${from}`);
 }
 
